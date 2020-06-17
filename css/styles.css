@@ -1,0 +1,22 @@
+/* ================
+Universal Selector
+================ */
+
+* {
+  box-sizing: border-box;
+}
+
+/* ================
+      Header
+================ */
+
+header h1 {
+  background: #2F394D;
+}
+
+
+
+
+
+
+
