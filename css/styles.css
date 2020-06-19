@@ -6,17 +6,96 @@ Universal Selector
   box-sizing: border-box;
 }
 
+
+/* ================
+      Font
+================ */
+
+form {
+  font-family: 'Merriweather', serif;
+}
+
+
 /* ================
       Header
 ================ */
 
+header {
+  text-align: center;
+}
+
 header h1 {
   background: #2F394D;
+  color: white;
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 25px 25px;
+  font-weight: 500;
+}
+
+header h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
+header p {
+  color: gray;
+  font-size: 17px;
+  padding: 0 20px;
+  margin-top: 15px;
 }
 
 
+/* ================
+      Form
+================ */
 
+form {
+  margin: 30px 15px;
+  border-top: 4px double black;
+}
 
+fieldset {
+  border: none;
+  margin-top: 20px;
+  padding: 0;
+}
 
+legend {
+  font-size: 20px;
+  font-weight: bolder;
+  padding-bottom: 20px;
+}
+
+.contact-fld label {
+  display: block;
+  font-size: 14px;
+  padding: 5px 0 10px 1px;
+}
+
+.contact-fld input,
+.contact-fld select {
+  background-color: #f1f1f1;
+  border: none;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  box-shadow: -1px -2px 1px inset rgb(103, 109, 119);
+  margin-bottom: 15px;
+}
+
+.contact-fld input::placeholder {
+  text-align: end;
+  padding-right: 20px;
+  font-size: 12px;
+  color: #bbb;
+}
+
+.contact-fld select {
+  
+}
 
 
