@@ -103,6 +103,7 @@ textarea {
 
 #zip {
   width: 50%;
+  max-width: 150px;
 }
 
 textarea {
@@ -274,17 +275,19 @@ footer {
 
   .contact-row {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
   }
 
-  .contact-label {
+  .contact-row label {
     align-self: center;
     flex: 1 1;
     padding: 0;
+    max-width: 117px;
   }
   
-  .contact-input {
+  .contact-row input,
+  .contact-row select {
     height: 32px;
     flex: 1 150px;
     padding: 0 0 4px 15px;
@@ -292,25 +295,9 @@ footer {
     font-size: 12px;
   }
 
-  .zip {
-    display: flex;
-    justify-content: flex-start;
-    width: 100%;
-  }
-
-  .zip-label {
-    align-self: center;
-    flex-basis: 117px;
-    padding: 0;
-  }
-
-  .zip-input {
-    align-self: flex-start;
-    height: 32px;
-    flex-basis: 100px;
-    padding: 0 0 4px 15px;
-    margin-bottom: 4px;
-    font-size: 12px;
+  #zip {
+    max-width: 150px;
+    align-content: flex-start;
   }
 
   label {
