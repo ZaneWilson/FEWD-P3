@@ -57,12 +57,11 @@ header p {
 
 form {
   border: none;
-  background-color: #EDFCF9;
 }
 
 .key {
   color: tomato;
-  font-size: 10px;
+  font-size: 12px;
   position: absolute;
   top: 210px;
   right: 15px;
@@ -130,14 +129,12 @@ textarea:hover {
 
 .contact-input,
 .zip-input {
-  transition: transform 1s, background-color 1s, color 1s;
+  transition: transform 1s;
 }
 
 .contact-input:focus,
 .zip-input:focus {
-  transform: scale(1.2);
-  background-color: black;
-  color: white;
+  transform: scale(1.02);
 }
 
 .contact-input:focus,
@@ -233,7 +230,7 @@ footer {
   }
 
   header h1 {
-    font-size: 15px;
+    font-size: 22px;
     padding-top: 15px;
     padding-bottom: 15px;
     width: 100%;
@@ -244,7 +241,7 @@ footer {
   }
 
   header p {
-    font-size: 12px;
+    font-size: 14px;
     width: 50%;
   }
 
@@ -261,7 +258,7 @@ footer {
   }
 
   legend {
-    font-size: 14px;
+    font-size: 17px;
     align-self: flex-start;
     padding-bottom: 0;
   }
@@ -292,7 +289,7 @@ footer {
     flex: 1 150px;
     padding: 0 0 4px 15px;
     margin-bottom: 4px;
-    font-size: 12px;
+    font-size: 16px;
   }
 
   #zip {
@@ -301,15 +298,19 @@ footer {
   }
 
   label {
-    font-size: 10px;
+    font-size: 12px;
     color: rgb(90, 90, 90);
   }
 
   input::placeholder {
     text-align: end;
     padding-right: 20px;
-    font-size: 9px;
+    font-size: 12px;
     color: #bbb;
+  }
+
+  .contact-fld select:required:invalid {
+    font-size: 12px;
   }
 
   .newsletter-fld {
@@ -319,7 +320,7 @@ footer {
   }
 
   .newsletter-fld p {
-    font-size: 12px;
+    font-size: 14px;
     color: rgb(90, 90, 90);
   }
 
@@ -328,7 +329,17 @@ footer {
   }
 
   footer {
-    font-size: 12px;
+    font-size: 14px;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  
+  .key {
+    position: absolute;
+    top: 184px;
+    right: 330px;
   }
 
 }
